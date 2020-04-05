@@ -1,7 +1,7 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://onrooftop.com/"
+baseURL = "https://www.onrooftop.com/"
 title = "OnRooftop"
 languageCode = "en"
 hasCJKLanguage = false
