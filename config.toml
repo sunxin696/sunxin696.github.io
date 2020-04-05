@@ -1,7 +1,7 @@
 ##########################################
 # Site Settings
 
-baseURL = "onrooftop.com"
+baseURL = "https://onrooftop.com/"
 title = "OnRooftop"
 languageCode = "en"
 hasCJKLanguage = false
@@ -12,7 +12,7 @@ copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0
 theme = "meme"
 
 # `hugo new` automatically opened text editor
-newContentEditor = "Typora"
+newContentEditor = ""
 
 # i18n
 defaultContentLanguage = "en"
