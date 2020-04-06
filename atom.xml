@@ -1,4 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title type="text">OnRooftop</title><subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle><updated>2020-04-06T04:04:32+00:00</updated><id>https://www.onrooftop.com/</id><link rel="alternate" type="text/html" href="https://www.onrooftop.com/"/><link rel="self" type="application/atom+xml" href="https://www.onrooftop.com/atom.xml"/><author><name>Xin Sun</name><uri>https://www.onrooftop.com/</uri><email>sun_xin@yeah.net</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><generator uri="https://gohugo.io/" version="0.68.3">Hugo</generator><entry><title type="text">Hello World</title><link rel="alternate" type="text/html" href="https://www.onrooftop.com/posts/hello-world/"/><id>https://www.onrooftop.com/posts/hello-world/</id><updated>2020-04-06T04:04:31+00:00</updated><published>2020-04-05T15:27:32+08:00</published><author><name>Xin Sun</name><uri>https://www.onrooftop.com/</uri><email>sun_xin@yeah.net</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;p>&lt;strong>Hello World&lt;/strong>&lt;/p></summary><content type="html"><![CDATA[<p><strong>Hello World</strong></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title type="text">OnRooftop</title><subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle><updated>2020-04-06T04:06:52+00:00</updated><id>https://www.onrooftop.com/</id><link rel="alternate" type="text/html" href="https://www.onrooftop.com/"/><link rel="self" type="application/atom+xml" href="https://www.onrooftop.com/atom.xml"/><author><name>Xin Sun</name><uri>https://www.onrooftop.com/</uri><email>sun_xin@yeah.net</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><generator uri="https://gohugo.io/" version="0.68.3">Hugo</generator><entry><title type="text">使用Hugo生成静态博客</title><link rel="alternate" type="text/html" href="https://www.onrooftop.com/posts/20200331%E7%94%A8hugo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/><id>https://www.onrooftop.com/posts/20200331%E7%94%A8hugo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id><updated>2020-04-06T04:06:50+00:00</updated><published>2020-04-06T06:42:09+08:00</published><author><name>Xin Sun</name><uri>https://www.onrooftop.com/</uri><email>sun_xin@yeah.net</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;p>一直都想有一个博客，一是自己做一些记录防止以后遗忘，二是和大家做一下分享交流。博客终于建好了，那除了第一篇Hello World，这一篇我就写一下博客搭建的过程。&lt;/p></summary><content type="html"><![CDATA[<p>一直都想有一个博客，一是自己做一些记录防止以后遗忘，二是和大家做一下分享交流。博客终于建好了，那除了第一篇Hello World，这一篇我就写一下博客搭建的过程。</p>
+<p>我还是很菜，好多东西都没有弄明白，只有以后慢慢摸索补充了。</p>
+<p>这次打算使用的工具有：</p>
+<ul>
+<li>
+<p>Hugo</p>
+<p>Hugo是一款开源使用Go语言写的静态网站生成器，适合数据量不大的个人博客使用。一开始我是了解的Jekyll，因为它被GitHub Pages原生支持，它的书写语言是Ruby，在后面的搭建中，我发现Jekyll的依赖环境比较难以搭建。我又开始比较Hugo、Jekyll、Hexo，最后我选择了不需要搭建并且建站速度非常快的Hugo。</p>
+</li>
+<li>
+<p>GitHub Pages</p>
+<p>GitHub Pages是GitHub提供的一个网页寄存服务，于2008年推出。可以用于存放静态网页，包括博客、项目文档甚至整本书。</p>
+</li>
+<li>
+<p>Git</p>
+<p>Git是由Linux之父<a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>创作的一个分布式版本控制软件。</p>
+</li>
+<li>
+<p>Typora</p>
+<p>Typora 是一款支持实时预览的Markdown 文本编辑器。</p>
+</li>
+</ul>
+<h3 id="一-网站搭建">一、 网站搭建</h3>
+<ul>
+<li>
+<h4 id="安装git并配置好github">安装Git并配置好GitHub</h4>
+<p>按照GitHub Pages的规则，在GitHub中创建一个<strong>username.github.io</strong>的仓库，建成后这个仓库名就是你的           GitHub Pages域名，可以直接访问。</p>
+<p>接下来我们配置Git，首先在本地创建ssh key</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ ssh-keygen -t rsa -C <span class="s2">&#34;your_email@youremail.com&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>回车确认之后会要求确认路径和输入密码，这里我们使用默认的一路回车就行。成功之后按照显示的路径，找到并打开id_rsa.pub，复制里面的key。</p>
+<p>回到GitHub上，进入<strong>Account Settings</strong>（账户配置），左侧栏选择<strong>SSH Keys</strong>，点击<strong>Add SSH Key</strong>，名称任意输入，粘贴你在电脑上生成的Key。</p>
+<p>为了验证是否成功，输入以下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ ssh -T git@github.com
+</code></pre></td></tr></table>
+</div>
+</div><p>如果是第一次会提示是否continue，输入yes就会看到：You&rsquo;ve successfully authenticated,but GitHub does  not provide shell access. 这就表示已经成功连上GitHub。</p>
+<p>接下来，我们要做到就是把本地仓库传到GitHub上去，在此之前还需要设置username和email，因为GitHub每次commit都会记录它们。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ git config --global user.name <span class="s2">&#34;your name&#34;</span>
+$ git config --global user.email <span class="s2">&#34;you_email@youremail.com&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>到了这里GitHub的账户就配置好了。</p>
+</li>
+<li>
+<h4 id="安装hugo">安装Hugo</h4>
+<p>使用Go语言开发编译后的二进制文件并不需要任何依赖，直接在官网上<a href="https://github.com/gohugoio/hugo/releases">下载</a>，把下载好的程序解压到C:\Hugo\bin，在系统信息里找到<strong>高级系统设置</strong>&mdash;&gt;<strong>高级</strong>&mdash;&gt;<strong>环境变量</strong>，在用户变量中的<strong>PATH</strong>上双击，把Hugo的目录添加上并保存，这样Hugo就安装完 成了。</p>
+</li>
+<li>
+<h4 id="建站">建站</h4>
+<p>建立一个名称是example的博客</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ hugo new site example
+</code></pre></td></tr></table>
+</div>
+</div><p>此时会在当前工作目录生成一个example文件夹</p>
+</li>
+<li>
+<h4 id="安装主题并生成本地网站">安装主题并生成本地网站</h4>
+<p>对于我这种新手来说，选择一个好的主题是比较重要的一步。对我来说一个符合自己的主题要有一下几点：</p>
+<ul>
+<li>主题要符合自己的审美</li>
+<li>主题功能要完善，配置项目要丰富</li>
+<li>主题要能持续更新并且bug较少</li>
+<li>主题要有完善的文档</li>
+</ul>
+<p>这里我选择的是<a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a>，主题比较简洁，并且支持暗黑模式。开发者<a href="https://io-oi.me/">reuixiy</a>的博客也经常更新。</p>
+<p><strong>安装主题</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ git init
+$ git submodule add --depth <span class="m">1</span> https://github.com/reuixiy/hugo-theme-meme.git themes/meme
+</code></pre></td></tr></table>
+</div>
+</div><p>在主题文件夹中找到**/config-examples/en/config.toml**文件复制替换网站根目录中的配置文件，复制主题文件夹中**exampleSite\resources**文件夹到网站根目录。</p>
+<p>如果下载主题失败，我们也可以直接下载该主题的zip打包文件，并解压到<strong>themes</strong>目录。</p>
+<p><strong>发布文章</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ hugo new posts/new-post.md
+$ hugo new about/_index.md
+</code></pre></td></tr></table>
+</div>
+</div><p>第二步是创建About页面的文章。</p>
+<p>创建好文章好，我是用Typora来编辑的。</p>
+<p><strong>预览网站</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ hugo server -D
+</code></pre></td></tr></table>
+</div>
+</div><p>这样我们就可以在浏览器中预览网站的效果，默认是http://localhost:1313/，后面的-D参数为的是预览草稿文章。</p>
+<h3 id="二网站发布">二、网站发布</h3>
+<p><strong>编译网站</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ hugo
+</code></pre></td></tr></table>
+</div>
+</div><p>Hugo将编译所有文件并输出到<strong>public</strong>目录。</p>
+<p><strong>推送网站</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> public
+$ git init <span class="c1">#如果在安装主题时初始化过仓库，就不需要这一步</span>
+$ git remote add origin https://github.com/username/username.github.io.git
+$ git add -A
+$ git commit -m <span class="s2">&#34;first commit&#34;</span>
+$ git push -u origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>推送成功后稍等片刻，我们就可以打开username.github.io来观看实际的效果了。</p>
+<p>如果自己有域名的话，可以在DNS设置CNAME记录到username.github.io，然后在仓库的CNAME处设置好域名就可以用自己的域名访问博客了。</p>
+<p><strong>更新文章</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> public
+$ git add .
+$ git status
+$ git commit -m <span class="s2">&#34;add blog post&#34;</span>
+$ git push
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>参考</strong></p>
+<ol>
+<li><a href="https://sspai.com/post/54912">Typora完全使用详解</a></li>
+<li><a href="https://sb.sb/blog/migrate-to-hugo/#1-%E5%AE%89%E8%A3%85-hugo">使用Hugo生成静态博客教程</a></li>
+</ol>
+</li>
+</ul>]]></content><category scheme="https://www.onrooftop.com/categories/%E6%8A%80%E6%9C%AF/" term="技术" label="技术"/><category scheme="https://www.onrooftop.com/tags/hugo/" term="Hugo" label="Hugo"/></entry><entry><title type="text">Hello World</title><link rel="alternate" type="text/html" href="https://www.onrooftop.com/posts/hello-world/"/><id>https://www.onrooftop.com/posts/hello-world/</id><updated>2020-04-06T04:06:50+00:00</updated><published>2020-04-05T15:27:32+08:00</published><author><name>Xin Sun</name><uri>https://www.onrooftop.com/</uri><email>sun_xin@yeah.net</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;p>&lt;strong>Hello World&lt;/strong>&lt;/p></summary><content type="html"><![CDATA[<p><strong>Hello World</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
