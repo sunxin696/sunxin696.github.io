@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>OnRooftop</title><link>https://www.onrooftop.com/</link><description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description><generator>Hugo 0.68.3 https://gohugo.io/</generator><language>en</language><managingEditor>sun_xin@yeah.net (Xin Sun)</managingEditor><webMaster>sun_xin@yeah.net (Xin Sun)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright><lastBuildDate>Mon, 06 Apr 2020 15:13:59 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://www.onrooftop.com/rss.xml"/><item><title>使用Hugo生成静态博客</title><link>https://www.onrooftop.com/posts/20200331%E7%94%A8hugo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://www.onrooftop.com/posts/20200331%E7%94%A8hugo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 06 Apr 2020 06:42:09 +0800</pubDate><author>sun_xin@yeah.net (Xin Sun)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright><description><![CDATA[<p>一直都想有一个博客，一是自己做一些记录防止以后遗忘，二是和大家做一下分享交流。博客终于建好了，那除了第一篇Hello World，这一篇我就写一下博客搭建的过程。</p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>OnRooftop</title><link>https://www.onrooftop.com/</link><description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description><generator>Hugo 0.68.3 https://gohugo.io/</generator><language>en</language><managingEditor>sun_xin@yeah.net (Xin Sun)</managingEditor><webMaster>sun_xin@yeah.net (Xin Sun)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright><lastBuildDate>Thu, 09 Apr 2020 02:44:36 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://www.onrooftop.com/rss.xml"/><item><title>Hello World</title><link>https://www.onrooftop.com/posts/hello-world/</link><guid isPermaLink="true">https://www.onrooftop.com/posts/hello-world/</guid><pubDate>Sun, 05 Apr 2020 15:27:32 +0800</pubDate><author>sun_xin@yeah.net (Xin Sun)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright><description><![CDATA[<p><strong>Hello World</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;hello,world</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>使用Hugo生成静态博客</title><link>https://www.onrooftop.com/posts/%E7%94%A8hugo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://www.onrooftop.com/posts/%E7%94%A8hugo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 06 Apr 2020 06:42:09 +0800</pubDate><author>sun_xin@yeah.net (Xin Sun)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright><description><![CDATA[<p>一直都想有一个博客，一是自己做一些记录防止以后遗忘，二是和大家做一下分享交流。博客终于建好了，那除了第一篇Hello World，这一篇我就写一下博客搭建的过程。</p>
 <p>我还是很菜，好多东西都没有弄明白，只有以后慢慢摸索补充了。</p>
 <p>这次打算使用的工具有：</p>
 <ul>
@@ -177,23 +196,159 @@ $ git push
 <li><a href="https://sb.sb/blog/migrate-to-hugo/#1-%E5%AE%89%E8%A3%85-hugo">使用Hugo生成静态博客教程</a></li>
 </ol>
 </li>
-</ul>]]></description><category domain="https://www.onrooftop.com/categories/%E6%8A%80%E6%9C%AF/">技术</category><category domain="https://www.onrooftop.com/tags/hugo/">Hugo</category></item><item><title>Hello World</title><link>https://www.onrooftop.com/posts/hello-world/</link><guid isPermaLink="true">https://www.onrooftop.com/posts/hello-world/</guid><pubDate>Sun, 05 Apr 2020 15:27:32 +0800</pubDate><author>sun_xin@yeah.net (Xin Sun)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright><description><![CDATA[<p><strong>Hello World</strong></p>
+</ul>]]></description><category domain="https://www.onrooftop.com/categories/%E6%8A%80%E6%9C%AF/">技术</category><category domain="https://www.onrooftop.com/tags/hugo/">Hugo</category></item><item><title>Centos7安装shadowsocks-libev</title><link>https://www.onrooftop.com/posts/centos7-install-shadowsocks-libev/</link><guid isPermaLink="true">https://www.onrooftop.com/posts/centos7-install-shadowsocks-libev/</guid><pubDate>Wed, 08 Apr 2020 23:04:35 +0800</pubDate><author>sun_xin@yeah.net (Xin Sun)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright><description><![CDATA[<p>虽然现在有V2Ray、Trojan这种隐蔽性更强的网络工具，但是<a href="https://github.com/shadowsocks/shadowsocks-libev">Shadowsocks-libev</a>作为一个轻量化的工具还是很适合性能不强的设备使用（最近比较容易被封）。</p>
+<h3 id="1安装shadowsocks">1、安装shadowsocks</h3>
+<p>安装dnf</p>
+<blockquote>
+<p>DNF (short for “DaNdiFied Yum”) is the next upcoming major version of Yum, a package manager for RPM-based Linux distributions, such as RHEL, CentOS, and Fedora. DNF is first introduced in Fedora 18, and it has became the default package manager from Fedora 25 version.</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install epel-release</span>
+<span class="c1"># yum install dnf</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>启用repo</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dnf install dnf-plugins-core</span>
+<span class="c1"># dnf copr enable librehat/shadowsocks</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>也可以从<a href="https://copr.fedoraproject.org/coprs/librehat/shadowsocks/">Fedora Copr</a>下载repo，并放到/etc/yum.repos.d/。</p>
+<p>安装shadowsocks-libev</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dnf update</span>
+<span class="c1"># dnf install shadowsocks-libev</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2编辑配置文件">2、编辑配置文件</h3>
+<p>/etc/shadowsocks-libev/config.json</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+     <span class="nt">&#34;server&#34;</span><span class="p">:</span><span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span>
+     <span class="nt">&#34;server_port&#34;</span><span class="p">:</span><span class="mi">8388</span><span class="p">,</span>
+     <span class="nt">&#34;local_port&#34;</span><span class="p">:</span><span class="mi">1080</span><span class="p">,</span>
+     <span class="nt">&#34;password&#34;</span><span class="p">:</span><span class="s2">&#34;password&#34;</span><span class="p">,</span>
+     <span class="nt">&#34;timeout&#34;</span><span class="p">:</span><span class="mi">600</span><span class="p">,</span>
+     <span class="nt">&#34;method&#34;</span><span class="p">:</span><span class="s2">&#34;aes-256-cfb&#34;</span><span class="p">,</span>
+     <span class="err">“mode</span><span class="nt">&#34;:&#34;</span><span class="err">tcp_and_udp</span><span class="s2">&#34;,
+</span><span class="s2">     &#34;</span><span class="err">fast_open&#34;</span><span class="p">:</span> <span class="kc">false</span>
+ <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>shadowsocks-libev不支持多端口号</p>
+<h3 id="3启动服务">3、启动服务</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span><span class="cp"></span>
-<span class="n">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;hello,world</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-<span class="p">}</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl enable shadowsocks-libev    #设置开机启动</span>
+<span class="c1"># systemctl start shadowsocks-libev</span>
+<span class="c1"># systemctl status shadowsocks-libev    #查看服务状态</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item></channel></rss>
+</div><h3 id="4开放防火墙端口">4、开放防火墙端口</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --zone=public --add-port=8388/tcp --permanent</span>
+<span class="c1"># firewall-cmd --zone=public --add-port=8388/udp --permanent</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>使防火墙规则生效</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart firewalld</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5如何排查错误">5、如何排查错误</h3>
+<ol>
+<li>查看shadowsocks-libev是否正确启动并监听相应端口</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># netstat -lnp | grep ss-server</span>
+<span class="c1"># netstat -autn</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>查看shadowsocks-libev日志</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># journalctl -u shadowsocks-libev</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>可以使用增加-f命令显示更新日志</p>
+<ol start="3">
+<li>查看通过ss-server启用了那些服务</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ps ax | grep ss-server</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="6前台运行服务">6、前台运行服务</h3>
+<p>可以使用ss-server前台运行服务</p>
+<p>例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ss-server -s 0.0.0.0 -p 8383 -k password -u -m aes-256-gcm</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>参考</strong></p>
+<ol>
+<li><a href="https://www.24kplus.com/linux/264.html">CentOS安装shadowsocks-libev服务端</a></li>
+<li><a href="https://cokebar.info/archives/767">Shadowsocks – libev 服务端的部署</a></li>
+<li><a href="https://crifan.github.io/scientific_network_summary/website/server_client_mode/ss_server/self_build_ss_server.html">自己搭建Shadowsocks服务器</a></li>
+</ol>]]></description><category domain="https://www.onrooftop.com/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</category><category domain="https://www.onrooftop.com/tags/shadowsocks/">shadowsocks</category></item></channel></rss>
