@@ -49,7 +49,7 @@
 <meta itemprop="description" content="虽然现在有V2Ray、Trojan这种隐蔽性更强的网络工具，但是Shadowsocks-libev作为一个轻量化的工具还是很适合性能不强的设备使用（最近比较容易被封）。">
 <meta itemprop="datePublished" content="2020-04-08T23:04:35&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-08T23:04:35&#43;08:00" />
-<meta itemprop="wordCount" content="633">
+<meta itemprop="wordCount" content="601">
 
 
 
@@ -129,7 +129,7 @@
         <div class="post-category">
             <a href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"> 科学上网 </a>
             </div>
-          <span class="more-meta"> 633 words </span>
+          <span class="more-meta"> 601 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -167,8 +167,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install epel-release</span>
-<span class="c1"># yum install dnf</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ yum install epel-release
+$ yum install dnf
 </code></pre></td></tr></table>
 </div>
 </div><p>启用repo</p>
@@ -178,8 +178,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dnf install dnf-plugins-core</span>
-<span class="c1"># dnf copr enable librehat/shadowsocks</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ dnf install dnf-plugins-core
+$ dnf copr <span class="nb">enable</span> librehat/shadowsocks
 </code></pre></td></tr></table>
 </div>
 </div><p>也可以从<a href="https://copr.fedoraproject.org/coprs/librehat/shadowsocks/">Fedora Copr</a>下载repo，并放到/etc/yum.repos.d/。</p>
@@ -190,8 +190,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dnf update</span>
-<span class="c1"># dnf install shadowsocks-libev</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ dnf update
+$ dnf install shadowsocks-libev
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="2编辑配置文件">2、编辑配置文件</h3>
@@ -217,8 +217,8 @@
      <span class="nt">&#34;password&#34;</span><span class="p">:</span><span class="s2">&#34;password&#34;</span><span class="p">,</span>
      <span class="nt">&#34;timeout&#34;</span><span class="p">:</span><span class="mi">600</span><span class="p">,</span>
      <span class="nt">&#34;method&#34;</span><span class="p">:</span><span class="s2">&#34;aes-256-cfb&#34;</span><span class="p">,</span>
-     <span class="err">“mode</span><span class="nt">&#34;:&#34;</span><span class="err">tcp_and_udp</span><span class="s2">&#34;,
-</span><span class="s2">     &#34;</span><span class="err">fast_open&#34;</span><span class="p">:</span> <span class="kc">false</span>
+     <span class="nt">&#34;mode&#34;</span><span class="p">:</span><span class="s2">&#34;tcp_and_udp&#34;</span><span class="p">,</span>
+     <span class="nt">&#34;fast_open&#34;</span><span class="p">:</span> <span class="kc">false</span>
  <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -231,9 +231,9 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl enable shadowsocks-libev    #设置开机启动</span>
-<span class="c1"># systemctl start shadowsocks-libev</span>
-<span class="c1"># systemctl status shadowsocks-libev    #查看服务状态</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ systemctl <span class="nb">enable</span> shadowsocks-libev    <span class="c1">#设置开机启动</span>
+$ systemctl start shadowsocks-libev
+$ systemctl status shadowsocks-libev    <span class="c1">#查看服务状态</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="4开放防火墙端口">4、开放防火墙端口</h3>
@@ -243,8 +243,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --zone=public --add-port=8388/tcp --permanent</span>
-<span class="c1"># firewall-cmd --zone=public --add-port=8388/udp --permanent</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>8388/tcp --permanent
+$ firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>8388/udp --permanent
 </code></pre></td></tr></table>
 </div>
 </div><p>使防火墙规则生效</p>
@@ -253,7 +253,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart firewalld</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ systemctl restart firewalld
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="5如何排查错误">5、如何排查错误</h3>
@@ -266,8 +266,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># netstat -lnp | grep ss-server</span>
-<span class="c1"># netstat -autn</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ netstat -lnp <span class="p">|</span> grep ss-server
+$ netstat -autn
 </code></pre></td></tr></table>
 </div>
 </div><ol start="2">
@@ -278,7 +278,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># journalctl -u shadowsocks-libev</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ journalctl -u shadowsocks-libev
 </code></pre></td></tr></table>
 </div>
 </div><p>可以使用增加-f命令显示更新日志</p>
@@ -290,7 +290,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ps ax | grep ss-server</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ ps ax <span class="p">|</span> grep ss-server
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="6前台运行服务">6、前台运行服务</h3>
@@ -301,7 +301,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ss-server -s 0.0.0.0 -p 8383 -k password -u -m aes-256-gcm</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ ss-server -s 0.0.0.0 -p <span class="m">8383</span> -k password -u -m aes-256-gcm
 </code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -333,9 +333,9 @@
           <a href="/tags/shadowsocks/">shadowsocks</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+        <a class="prev" href="/post/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">使用Hugo生成静态博客</span>
+            <span class="prev-text nav-default">Centos7安装Python版shadowsocks并支持gcm加密</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
