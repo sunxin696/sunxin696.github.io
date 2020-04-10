@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on onrooftop - my notes</title><link>https://www.onrooftop.com/post/</link><description>Recent content in Posts on onrooftop - my notes</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Apr 2020 11:14:48 +0800</lastBuildDate><atom:link href="https://www.onrooftop.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://www.onrooftop.com/2020/04/hello-world/</link><pubDate>Sun, 05 Apr 2020 15:27:32 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/hello-world/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on onrooftop - my notes</title><link>https://www.onrooftop.com/post/</link><description>Recent content in Posts on onrooftop - my notes</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Apr 2020 17:24:28 +0800</lastBuildDate><atom:link href="https://www.onrooftop.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://www.onrooftop.com/2020/04/hello-world/</link><pubDate>Sun, 05 Apr 2020 15:27:32 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/hello-world/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -16,7 +16,25 @@
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>使用Hugo生成静态博客</title><link>https://www.onrooftop.com/2020/04/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link><pubDate>Mon, 06 Apr 2020 06:42:09 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>一直都想有一个博客，一是自己做一些记录防止以后遗忘，二是和大家做一下分享交流。博客终于建好了，那除了第一篇Hello World，这一篇我就写一下博客搭建的过程。&lt;/p></description></item><item><title>Git设置代理</title><link>https://www.onrooftop.com/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</link><pubDate>Fri, 10 Apr 2020 11:14:48 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</guid><description>有的时候我们会遇到git push到GitHub失败的情况，设置代理可能会解决这个问题。 全局设置 设置代理 1 2 git config --global http.proxy http://127.0.0.1:1080 git config --global http.proxy socks5h://127.0.0.1:1080 取消代理 1 git config</description></item><item><title>Centos7安装Python版shadowsocks并支持gcm加密</title><link>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</link><pubDate>Thu, 09 Apr 2020 13:28:22 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</guid><description>&lt;h3 id="1安装">1、安装&lt;/h3>
+&lt;/div></description></item><item><title>使用Hugo生成静态博客</title><link>https://www.onrooftop.com/2020/04/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link><pubDate>Mon, 06 Apr 2020 06:42:09 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>一直都想有一个博客，一是自己做一些记录防止以后遗忘，二是和大家做一下分享交流。博客终于建好了，那除了第一篇Hello World，这一篇我就写一下博客搭建的过程。&lt;/p></description></item><item><title>用GitHub Actions在GitHub Pages上自动发布Hugo个人网站</title><link>https://www.onrooftop.com/2020/04/%E7%94%A8github-actions%E5%9C%A8github-pages%E4%B8%8A%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83hugo%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Fri, 10 Apr 2020 17:24:28 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/%E7%94%A8github-actions%E5%9C%A8github-pages%E4%B8%8A%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83hugo%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>我这里是按照&lt;strong>Jared.Tan&lt;/strong>在知乎上的文章&lt;a href="https://zhuanlan.zhihu.com/p/109057290">折腾Hugo | GitHub Pages | Github Actions自动构建发布免费个人网站&lt;/a>来实现的，在这里自己做一下整理。&lt;/p>
+&lt;h3 id="1创建仓库">1、创建仓库&lt;/h3>
+&lt;ul>
+&lt;li>创建源码仓库&lt;code>example.github.io.source&lt;/code>，并设置为&lt;code>Private&lt;/code>。&lt;/li>
+&lt;li>创建网站仓库&lt;code>example.github.io&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>Git设置代理</title><link>https://www.onrooftop.com/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</link><pubDate>Fri, 10 Apr 2020 11:14:48 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</guid><description>&lt;p>有的时候我们会遇到git push到GitHub失败的情况，设置代理可能会解决这个问题。&lt;/p>
+&lt;h3 id="全局设置">全局设置&lt;/h3>
+&lt;p>设置代理&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git config --global http.proxy http://127.0.0.1:1080
+git config --global http.proxy socks5h://127.0.0.1:1080
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Centos7安装Python版shadowsocks并支持gcm加密</title><link>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</link><pubDate>Thu, 09 Apr 2020 13:28:22 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</guid><description>&lt;h3 id="1安装">1、安装&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
