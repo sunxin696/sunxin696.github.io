@@ -177,6 +177,57 @@
 
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2020/04/hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0disqus%E8%AF%84%E8%AE%BA/">Hugo博客添加Disqus评论</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-04-10 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+          </div>
+        <span class="more-meta"> 229 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Hugo开启Disqus非常简单，只需要一个short name。 首先我们在Disqus网站https://disqus.com/注册一个账号
+    </div>
+    <div class="read-more">
+      <a href="/2020/04/hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0disqus%E8%AF%84%E8%AE%BA/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2020/04/%E7%94%A8github-actions%E5%9C%A8github-pages%E4%B8%8A%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83hugo%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/">用GitHub Actions在GitHub Pages上自动发布Hugo个人网站</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-04-10 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+          </div>
+        <span class="more-meta"> 996 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <p>我这里是按照<strong>Jared.Tan</strong>在知乎上的文章<a href="https://zhuanlan.zhihu.com/p/109057290">折腾Hugo | GitHub Pages | Github Actions自动构建发布免费个人网站</a>来实现的，在这里自己做一下整理。</p>
+<h3 id="1创建仓库">1、创建仓库</h3>
+<ul>
+<li>创建源码仓库<code>example.github.io.source</code>，并设置为<code>Private</code>。</li>
+<li>创建网站仓库<code>example.github.io</code></li>
+</ul>
+    </div>
+    <div class="read-more">
+      <a href="/2020/04/%E7%94%A8github-actions%E5%9C%A8github-pages%E4%B8%8A%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83hugo%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/">Git设置代理</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-04-10 </span>
@@ -188,71 +239,23 @@
   
   <div class="post-content">
     <div class="post-summary">
-      有的时候我们会遇到git push到GitHub失败的情况，设置代理可能会解决这个问题。 全局设置 设置代理 1 2 git config --global http.proxy http://127.0.0.1:1080 git config --global http.proxy socks5h://127.0.0.1:1080 取消代理 1 git config
-    </div>
-    <div class="read-more">
-      <a href="/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/">Centos7安装Python版shadowsocks并支持gcm加密</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-04-09 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"> 科学上网 </a>
-          </div>
-        <span class="more-meta"> 215 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <h3 id="1安装">1、安装</h3>
+      <p>有的时候我们会遇到git push到GitHub失败的情况，设置代理可能会解决这个问题。</p>
+<h3 id="全局设置">全局设置</h3>
+<p>设置代理</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ yum -y install epel-release
-$ yum install python-pip
-$ pip install --upgrade pip
-$ pip install shadowsocks 
+<pre class="chroma"><code class="language-bash" data-lang="bash">git config --global http.proxy http://127.0.0.1:1080
+git config --global http.proxy socks5h://127.0.0.1:1080
 </code></pre></td></tr></table>
 </div>
 </div>
     </div>
     <div class="read-more">
-      <a href="/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2020/04/centos7%E5%AE%89%E8%A3%85shadowsocks-libev/">Centos7安装shadowsocks-libev</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-04-08 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"> 科学上网 </a>
-          </div>
-        <span class="more-meta"> 601 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>虽然现在有V2Ray、Trojan这种隐蔽性更强的网络工具，但是<a href="https://github.com/shadowsocks/shadowsocks-libev">Shadowsocks-libev</a>作为一个轻量化的工具还是很适合性能不强的设备使用（最近比较容易被封）。</p>
-    </div>
-    <div class="read-more">
-      <a href="/2020/04/centos7%E5%AE%89%E8%A3%85shadowsocks-libev/" class="read-more-link">Read more...</a>
+      <a href="/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
@@ -261,7 +264,10 @@ $ pip install shadowsocks
   
   <nav class="pagination">
     
-    
+    <a class="next" href="/page/2/">
+        <span class="next-text">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
   </nav>
         </div>
         
