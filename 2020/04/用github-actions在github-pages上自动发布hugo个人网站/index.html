@@ -1,0 +1,95 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>用GitHub Actions在GitHub Pages上自动发布Hugo个人网站 - onrooftop - my notes</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="Xin Sun"><meta name=description content="我这里是按照Jared.Tan在知乎上的文章折腾Hugo | GitHub Pages | Github Actions自动构建发布免费个人网站来实现的，在这里自己做一下整理。
+1、创建仓库  创建源码仓库example.github.io.source，并设置为Private。 创建网站仓库example.github.io"><meta name=keywords content="notes"><meta name=generator content="Hugo 0.68.3 with theme even"><link rel=canonical href=https://www.onrooftop.com/2020/04/%E7%94%A8github-actions%E5%9C%A8github-pages%E4%B8%8A%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83hugo%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link href=/dist/%3cnil%3e rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><meta property="og:title" content="用GitHub Actions在GitHub Pages上自动发布Hugo个人网站"><meta property="og:description" content="我这里是按照Jared.Tan在知乎上的文章折腾Hugo | GitHub Pages | Github Actions自动构建发布免费个人网站来实现的，在这里自己做一下整理。
+1、创建仓库
+
+创建源码仓库example.github.io.source，并设置为Private。
+创建网站仓库example.github.io"><meta property="og:type" content="article"><meta property="og:url" content="https://www.onrooftop.com/2020/04/%E7%94%A8github-actions%E5%9C%A8github-pages%E4%B8%8A%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83hugo%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"><meta property="article:published_time" content="2020-04-10T17:24:28+08:00"><meta property="article:modified_time" content="2020-04-10T17:24:28+08:00"><meta itemprop=name content="用GitHub Actions在GitHub Pages上自动发布Hugo个人网站"><meta itemprop=description content="我这里是按照Jared.Tan在知乎上的文章折腾Hugo | GitHub Pages | Github Actions自动构建发布免费个人网站来实现的，在这里自己做一下整理。
+1、创建仓库
+
+创建源码仓库example.github.io.source，并设置为Private。
+创建网站仓库example.github.io"><meta itemprop=datePublished content="2020-04-10T17:24:28+08:00"><meta itemprop=dateModified content="2020-04-10T17:24:28+08:00"><meta itemprop=wordCount content="1122"><meta itemprop=keywords content="Hugo,GitHub Pages,"><meta name=twitter:card content="summary"><meta name=twitter:title content="用GitHub Actions在GitHub Pages上自动发布Hugo个人网站"><meta name=twitter:description content="我这里是按照Jared.Tan在知乎上的文章折腾Hugo | GitHub Pages | Github Actions自动构建发布免费个人网站来实现的，在这里自己做一下整理。
+1、创建仓库
+
+创建源码仓库example.github.io.source，并设置为Private。
+创建网站仓库example.github.io"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>onrooftop</a></div><div class=mobile-navbar-icon><span></span><span></span><span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>Home</li></a><a href=/post/><li class=mobile-menu-item>Archives</li></a><a href=/tags/><li class=mobile-menu-item>Tags</li></a><a href=/categories/><li class=mobile-menu-item>Categories</li></a><a href=/about/><li class=mobile-menu-item>About</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>onrooftop</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>Home</a></li><li class=menu-item><a class=menu-item-link href=/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=/about/>About</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>用GitHub Actions在GitHub Pages上自动发布Hugo个人网站</h1><div class=post-meta><span class=post-time>2020-04-10</span><div class=post-category><a href=/categories/%E6%8A%80%E6%9C%AF/>技术</a></div><span class=more-meta></span><span class=more-meta></span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title></h2><div class="post-toc-content always-active"><nav id=TableOfContents><ul><li><ul><li><a href=#1创建仓库>1、创建仓库</a></li><li><a href=#2绑定ssh-key>2、绑定SSH Key</a></li><li><a href=#3将源码推送到仓库>3、将源码推送到仓库</a></li><li><a href=#4配置github-actions>4、配置GitHub Actions</a></li><li><a href=#5设置gitignore文件>5、设置<code>.gitignore</code>文件</a></li></ul></li></ul></nav></div></div><div class=post-content><p>我这里是按照<strong>Jared.Tan</strong>在知乎上的文章<a href=https://zhuanlan.zhihu.com/p/109057290>折腾Hugo | GitHub Pages | Github Actions自动构建发布免费个人网站</a>来实现的，在这里自己做一下整理。</p><h3 id=1创建仓库>1、创建仓库</h3><ul><li>创建源码仓库<code>example.github.io.source</code>，并设置为<code>Private</code>。</li><li>创建网站仓库<code>example.github.io</code></li></ul><h3 id=2绑定ssh-key>2、绑定SSH Key</h3><p>GitHub Actions在编译生成静态文件并通过Git Push到网站仓库<code>example.github.io</code>时需要Git账户认证。</p><ul><li><p>生成一对ssh key</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>$ ssh-keygen -t rsa -C <span class=s2>&#34;your_email@youremail.com&#34;</span>
+</code></pre></td></tr></table></div></div><p>在输入路径时我们自定义一个路径防止影响到原来的ssh key。</p></li><li><p>添加Public Key到<code>example.github.io</code>仓库</p><p>按照生成ssh key的路径打开.ssh.pub文件并复制里面的内容，在<code>example.github.io</code>仓库<strong>Settings</strong>→<strong>Deploy keys</strong>在里面点击新增后粘贴，要注意勾选<strong>Allow write access</strong>。</p></li><li><p>添加Private Key到<code>example.github.io.source</code>仓库</p><p>按照生成ssh key的路径打开.ssh文件并复制里面的内容，在<code>example.github.io.source</code>仓库</p><p><strong>Settings</strong>→<strong>Secrets</strong>添加一个新的secret后粘贴，这里的名称一定要用<code>ACTIONS_DEPLOY_KEY</code>，在后面的Ation会用到。</p></li></ul><h3 id=3将源码推送到仓库>3、将源码推送到仓库</h3><p>这里我们用Hugo创建一个个人网站，在用<code>hugo server</code>命令预览网站没有问题之后，使用<code>git push</code>命令推送源码到<code>example.github.io.source</code>仓库。</p><h3 id=4配置github-actions>4、配置GitHub Actions</h3><p>在<code>example.github.io.source</code>仓库的Actions点击<strong>New workflow</strong>，然后按照要求修改下面的文件粘贴进去：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-yaml data-lang=yaml><span class=k>name</span><span class=p>:</span><span class=w> </span>Deploy<span class=w> </span>Hugo<span class=w> </span>Site<span class=w> </span>to<span class=w> </span>Github<span class=w> </span>Pages<span class=w> </span>on<span class=w> </span>Master<span class=w> </span>Branch<span class=w>
+</span><span class=w>
+</span><span class=w></span><span class=k>on</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span><span class=k>push</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=k>branches</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- master<span class=w>
+</span><span class=w>
+</span><span class=w></span><span class=k>jobs</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span><span class=k>build-deploy</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=k>runs-on</span><span class=p>:</span><span class=w> </span>ubuntu<span class=m>-18.04</span><span class=w>
+</span><span class=w>    </span><span class=k>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=k>uses</span><span class=p>:</span><span class=w> </span>actions/checkout@v1<span class=w>  </span><span class=c># v2 does not have submodules option now</span><span class=w>
+</span><span class=w>       </span><span class=c># with:</span><span class=w>
+</span><span class=w>       </span><span class=c>#   submodules: true</span><span class=w>
+</span><span class=w>
+</span><span class=w>      </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Setup<span class=w> </span>Hugo<span class=w>
+</span><span class=w>        </span><span class=k>uses</span><span class=p>:</span><span class=w> </span>peaceiris/actions-hugo@v2<span class=w>
+</span><span class=w>        </span><span class=k>with</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=k>hugo-version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;0.62.2&#39;</span><span class=w>   </span><span class=c># 这里的版本号要与你安装的版本号一致</span><span class=w>
+</span><span class=w>          </span><span class=c># extended: true</span><span class=w>
+</span><span class=w>
+</span><span class=w>      </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Build<span class=w>
+</span><span class=w>        </span><span class=k>run</span><span class=p>:</span><span class=w> </span>hugo<span class=w> </span>--minify<span class=w>
+</span><span class=w>
+</span><span class=w>      </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Deploy<span class=w>
+</span><span class=w>        </span><span class=k>uses</span><span class=p>:</span><span class=w> </span>peaceiris/actions-gh-pages@v3<span class=w>
+</span><span class=w>        </span><span class=k>with</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=k>deploy_key</span><span class=p>:</span><span class=w> </span>${{<span class=w> </span>secrets.ACTIONS_DEPLOY_KEY<span class=w> </span>}}<span class=w> </span><span class=c># 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名</span><span class=w>
+</span><span class=w>          </span><span class=k>external_repository</span><span class=p>:</span><span class=w> </span>JaredTan95/JaredTan95.github.io<span class=w> </span><span class=c># Pages 远程仓库 </span><span class=w>
+</span><span class=w>          </span><span class=k>publish_dir</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;./public&#34;</span><span class=w>
+</span><span class=w>          </span><span class=k>cname</span><span class=p>:</span><span class=w> </span>www.example.com<span class=w>     </span><span class=c># 如果没有cname请删除</span><span class=w>
+</span><span class=w>          </span><span class=k>keep_files</span><span class=p>:</span><span class=w> </span><span class=kc>false</span><span class=w> </span><span class=c># remove existing files</span><span class=w>
+</span><span class=w>          </span><span class=k>publish_branch</span><span class=p>:</span><span class=w> </span>master<span class=w>  </span><span class=c># deploying branch</span><span class=w>
+</span><span class=w>          </span><span class=k>commit_message</span><span class=p>:</span><span class=w> </span>${{<span class=w> </span>github.event.head_commit.message<span class=w> </span>}}<span class=w>
+</span></code></pre></td></tr></table></div></div><p>然后右上角提交commit就可以了。</p><p>出发之后我们每次出发之后的状态，点进去之后我们可以看到流水线日志，都是绿色对号就可以了。如果Actions运行有问题，我们会受到邮件提醒。</p><p><img src=https://i.imgur.com/83WAnsB.jpg alt=Actions></p><h3 id=5设置gitignore文件>5、设置<code>.gitignore</code>文件</h3><p>在实际的使用中我们会用<code>hugo</code>命令来测试生成网站，这样就会产生public文件夹，这个文件夹不需要上传到仓库中。我们在Git工作目录中创建<code>.gitignore</code>文件，然后写入一下内容就可以忽略public文件夹。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>public
+</code></pre></td></tr></table></div></div><hr><p><strong>参考</strong></p><ol><li><a href=https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208>https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208</a></li></ol></div><div class=post-copyright><p class=copyright-item><span class=item-title></span><span class=item-content>Xin Sun</span></p><p class=copyright-item><span class=item-title></span><span class=item-content>2020-04-10</span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/hugo/>Hugo</a>
+<a href=/tags/github-pages/>GitHub Pages</a></div><nav class=post-nav><a class=prev href=/2020/04/hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0disqus%E8%AF%84%E8%AE%BA/><i class="iconfont icon-left"></i><span class="prev-text nav-default">Hugo博客添加Disqus评论</span>
+<span class="prev-text nav-mobile"></span></a><a class=next href=/2020/04/git%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/><span class="next-text nav-default">Git设置代理</span>
+<span class="next-text nav-mobile"></span><i class="iconfont icon-right"></i></a></nav></footer></article></div><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname==='localhost')return;var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;var disqus_shortname='onrooftop';dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=mailto:sun_xin@yeah.net class="iconfont icon-email" title=email></a></div><div class=copyright><span class=power-by>%!(EXTRA string=<a class=hexo-link href=https://gohugo.io>Hugo</a>)</span>
+<span class=division>|</span>
+<span class=theme-info>-
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a></span>
+<span class=copyright-year>&copy;
+2020
+<span class=author>Xin Sun</span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script><script type=text/javascript src=/dist/%3cnil%3e></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-163248374-1','auto');ga('set','anonymizeIp',true);ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
