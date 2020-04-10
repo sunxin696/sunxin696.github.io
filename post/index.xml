@@ -34,7 +34,8 @@
 git config --global http.proxy socks5h://127.0.0.1:1080
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Centos7安装Python版shadowsocks并支持gcm加密</title><link>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</link><pubDate>Thu, 09 Apr 2020 13:28:22 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</guid><description>&lt;h3 id="1安装">1、安装&lt;/h3>
+&lt;/div></description></item><item><title>Centos7安装Python版shadowsocks并支持gcm加密</title><link>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</link><pubDate>Thu, 09 Apr 2020 13:28:22 +0800</pubDate><guid>https://www.onrooftop.com/2020/04/centos7%E5%AE%89%E8%A3%85python%E7%89%88shadowsocks%E5%B9%B6%E6%94%AF%E6%8C%81gcm%E5%8A%A0%E5%AF%86/</guid><description>&lt;p>&lt;strong>因为shadowsocks Python版停止更新了，不建议使用，我用了不到一天端口就被封了，这里只做存档。&lt;/strong>&lt;/p>
+&lt;h3 id="1安装">1、安装&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
