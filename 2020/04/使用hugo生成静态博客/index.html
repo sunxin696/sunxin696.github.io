@@ -175,7 +175,7 @@
 <h3 id="一网站搭建">一、网站搭建</h3>
 <ul>
 <li>
-<h4 id="安装git并配置好github">安装Git并配置好GitHub</h4>
+<p>安装Git并配置好GitHub</p>
 <p>按照GitHub Pages的规则，在GitHub中创建一个<strong>username.github.io</strong>的仓库，建成后这个仓库名就是你的           GitHub Pages域名，可以直接访问。</p>
 <p>接下来我们配置Git，首先在本地创建ssh key</p>
 <div class="highlight"><div class="chroma">
@@ -212,11 +212,11 @@ $ git config --global user.email <span class="s2">&#34;you_email@youremail.com&#
 </div><p>到了这里GitHub的账户就配置好了。</p>
 </li>
 <li>
-<h4 id="安装hugo">安装Hugo</h4>
+<p>安装Hugo</p>
 <p>使用Go语言开发编译后的二进制文件并不需要任何依赖，直接在官网上<a href="https://github.com/gohugoio/hugo/releases">下载</a>，把下载好的程序解压到C:\Hugo\bin，在系统信息里找到<strong>高级系统设置</strong>&mdash;&gt;<strong>高级</strong>&mdash;&gt;<strong>环境变量</strong>，在用户变量中的<strong>PATH</strong>上双击，把Hugo的目录添加上并保存，这样Hugo就安装完 成了。</p>
 </li>
 <li>
-<h4 id="建站">建站</h4>
+<p>建站</p>
 <p>建立一个名称是example的博客</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -229,7 +229,7 @@ $ git config --global user.email <span class="s2">&#34;you_email@youremail.com&#
 </div><p>此时会在当前工作目录生成一个example文件夹</p>
 </li>
 <li>
-<h4 id="安装主题并生成本地网站">安装主题并生成本地网站</h4>
+<p>安装主题并生成本地网站</p>
 <p>对于我这种新手来说，选择一个好的主题是比较重要的一步。对我来说一个符合自己的主题要有一下几点：</p>
 <ul>
 <li>主题要符合自己的审美</li>
@@ -238,7 +238,9 @@ $ git config --global user.email <span class="s2">&#34;you_email@youremail.com&#
 <li>主题要有完善的文档</li>
 </ul>
 <p>这里我选择的是<a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a>，主题比较简洁，并且支持暗黑模式。开发者<a href="https://io-oi.me/">reuixiy</a>的博客也经常更新。</p>
-<p><strong>安装主题</strong></p>
+<ol>
+<li>安装主题</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -251,7 +253,9 @@ $ git submodule add --depth <span class="m">1</span> https://github.com/reuixiy/
 </div>
 </div><p>在主题文件夹中找到\config-examples\en\config.toml文件复制替换网站根目录中的配置文件，复制主题文件夹中\exampleSite\resources文件夹到网站根目录。</p>
 <p>如果下载主题失败，我们也可以直接下载该主题的zip打包文件，并解压到<strong>themes</strong>目录。</p>
-<p><strong>发布文章</strong></p>
+<ol start="2">
+<li>发布文章</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -264,7 +268,9 @@ $ hugo new about/_index.md
 </div>
 </div><p>第二步是创建About页面的文章。</p>
 <p>创建好文章好，我是用Typora来编辑的。</p>
-<p><strong>预览网站</strong></p>
+</li>
+<li>
+<p>预览网站</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -277,7 +283,9 @@ $ hugo new about/_index.md
 </li>
 </ul>
 <h3 id="二网站发布">二、网站发布</h3>
-<p><strong>编译网站</strong></p>
+<ul>
+<li>
+<p>编译网站</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -287,7 +295,9 @@ $ hugo new about/_index.md
 </code></pre></td></tr></table>
 </div>
 </div><p>Hugo将编译所有文件并输出到<strong>public</strong>目录。</p>
-<p><strong>推送网站</strong></p>
+</li>
+<li>
+<p>推送网站</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -308,7 +318,9 @@ $ git push -u origin master
 </div>
 </div><p>推送成功后稍等片刻，我们就可以打开username.github.io来观看实际的效果了。</p>
 <p>如果自己有域名的话，可以在DNS设置CNAME记录到username.github.io，然后在仓库的CNAME处设置好域名就可以用自己的域名访问博客了。</p>
-<p><strong>更新文章</strong></p>
+</li>
+<li>
+<p>更新文章</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -325,7 +337,9 @@ $ git commit -m <span class="s2">&#34;add blog post&#34;</span>
 $ git push
 </code></pre></td></tr></table>
 </div>
-</div><hr>
+</div></li>
+</ul>
+<hr>
 <p><strong>参考</strong></p>
 <ol>
 <li><a href="https://sspai.com/post/54912">Typora完全使用详解</a></li>
